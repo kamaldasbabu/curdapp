@@ -29,10 +29,18 @@ addPost(title:string, content: string){
   const post: Post = {id: null, title: title, content: content};
   this.http.post<{message: string}>('http://localhost:3000/api/createpost', post)
     .subscribe(responseData => {
-      console.log("Ang"+responseData.message);
+      console.log("Ang "+responseData.message);
       this.posts.push(post);
       this.postsUpdated.next([...this.posts])
     })
+}
+
+deletePost( id: any) {
+   return this.http.delete(`http://localhost:3000/api/deletepost/${id}`).subscribe(
+     res => {
+       console.log("res aferter delete "+res);
+     }
+   )
 }
  
 }

@@ -40,8 +40,12 @@ switch (error.code){
      const bind = typeof addr==="string" ? "pipe"+addr: "port"+port;
      debug("listining"+bind);
  }
- app.set("port", port);
+ // setting port
+ app.set("port: ", port);
+
+ // create server and serve it or listen
  const server = http.createServer(app);
- server.on("error", onError);
- server.on("listening", onListening);
+ server.on("error: ", onError);
+ server.on("listening: ", onListening);
+ 
 server.listen(port);
