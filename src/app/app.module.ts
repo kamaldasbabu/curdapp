@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { HttpClientModule} from '@angular/common/http';
+import { IndexComponent } from './index/index.component';
 
 
 
@@ -18,7 +19,8 @@ import { HttpClientModule} from '@angular/common/http';
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostlistComponent
+    PostlistComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

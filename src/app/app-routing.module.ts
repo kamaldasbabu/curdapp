@@ -1,7 +1,16 @@
+import { PostlistComponent } from './postlist/postlist.component';
+import { PostCreateComponent } from './post-create/post-create.component';
+import { HeaderComponent } from './header/header.component';
+import { IndexComponent } from './index/index.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: IndexComponent},
+  { path: 'header', component: HeaderComponent},
+  { path: 'postcreate', component: PostCreateComponent},
+  { path: 'postlist', component: PostlistComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

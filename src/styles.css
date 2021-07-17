@@ -2,3 +2,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.br {
+    border: 2px solid rgb(219, 9, 9);
+}
+.bb {
+    border: 2px solid rgb(23, 9, 216);
+}
+.bg {
+    border: 2px solid rgb(79, 221, 14);
+}
+.by {
+    border: 2px solid rgb(226, 209, 58);
+}
+.w-100 {
+    width: 100%;
+}

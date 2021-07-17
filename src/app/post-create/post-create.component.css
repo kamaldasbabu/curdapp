@@ -1,0 +1,15 @@
+.post-create-content {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.form-items {
+    margin: auto;
+    text-align: center;
+
+}
+.save-btn {
+    
+    background-color: skyblue;
+    align-items: center;
+}
