@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { HttpClientModule} from '@angular/common/http';
 import { IndexComponent } from './index/index.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 
@@ -20,7 +21,8 @@ import { IndexComponent } from './index/index.component';
     PostCreateComponent,
     HeaderComponent,
     PostlistComponent,
-    IndexComponent
+    IndexComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { CalculatorComponent } from './calculator/calculator.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: IndexComponent},
   { path: 'header', component: HeaderComponent},
   { path: 'postcreate', component: PostCreateComponent},
-  { path: 'postlist', component: PostlistComponent}
+  { path: 'postlist', component: PostlistComponent},
+  { path: 'calc', component: CalculatorComponent}
 ];
 
 @NgModule({
