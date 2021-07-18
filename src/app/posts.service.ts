@@ -15,7 +15,7 @@ private postsUpdated = new Subject<Post[]>();
 getPosts (){
   
   this.http
-  .get<{ message: string, posts: Post[]}>('http://localhost:3000/api/readposts')
+  .get<{ message: string, posts: Post[]}>('api/readposts')
     .subscribe((postData)=> {
       this.posts = postData.posts;
       this.postsUpdated.next([...this.posts]);
@@ -25,9 +25,10 @@ getPostUpdateListener(){
   return this.postsUpdated.asObservable();
 }
 
+
 addPost(title:string, content: string){
   const post: Post = {id: null, title: title, content: content};
-  this.http.post<{message: string}>('http://localhost:3000/api/createpost', post)
+  this.http.post<{message: string}>('api/createpost', post)
     .subscribe(responseData => {
       console.log("Ang "+responseData.message);
       this.posts.push(post);
@@ -35,8 +36,9 @@ addPost(title:string, content: string){
     })
 }
 
+
 deletePost( id: any) {
-   return this.http.delete(`http://localhost:3000/api/deletepost/${id}`).subscribe(
+   return this.http.delete(`api/deletepost/${id}`).subscribe(
      res => {
        console.log("res aferter delete "+res);
      }
